@@ -1,0 +1,18 @@
+# {{ title }}
+report-1.md.j2
+**Author:** {{ author }}  
+**Date:** {{ date }}
+
+## Summary
+
+{{ summary }}
+
+## Notes
+
+{% for note in notes %}
+- {{ note }}
+{% endfor %}
+
+---
+
+*Generated automatically from Jinja2 template.*

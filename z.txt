@@ -1,0 +1,51 @@
+MkDocs + Material Theme
+Docs: https://squidfunk.github.io/mkdocs-material/
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install mkdocs-material
+mkdocs new mydocs
+cd mydocs
+mkdocs serve
+mkdocs build
+
+after the computer restarts
+cd ~/IdeaProjects/mkdocs && source ~/.venv/bin/activate && mkdocs serve --dev-addr=127.0.0.1:8002
+
+To stop all Python-based web servers:
+pkill -f mkdocs
+mkdocs serve --dev-addr=127.0.0.1:8001
+
+sudo lsof -i :8000
+kill -9 12345
+
+create .md file from template using python
+./generate_markdown.py --filename "gaga Lady" --author "Huykin"
+
+hide all
+
+<link rel="stylesheet" href="../../mkdocs/assets/stylesheets/main.2afb09e1.min.css">
+<link rel="stylesheet" href="../../mkdocs/assets/stylesheets/palette.06af60db.min.css">
+
+    <style>
+        .md-header {
+            display: none;
+        }
+
+        .md-nav {
+            display: none;
+        }
+
+        footer {
+            display: none;
+        }
+    </style>
+
+~~~
+
+check what venv is in python console
+import sys; print(sys.executable)
+
+~~~
+
+
